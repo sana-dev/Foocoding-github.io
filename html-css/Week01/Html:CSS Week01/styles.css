@@ -1,0 +1,131 @@
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: san-serif;
+}
+    
+body{
+      background:lightblue;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+
+}
+.container{
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      min-height: 1000px;
+      background: rgb(250, 250, 250);
+      margin: 50px;
+     display: grid;
+     grid-template-columns:2fr 1fr ;
+      box-shadow:0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left{
+      position: relative;
+      background: #b0b4b7;
+      padding: 40px;
+      display: grid;
+
+     }
+     .container .right {
+        
+           position: relative;
+           background: #fff;
+           padding: 20px;
+         
+     }
+     .profile-text{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid black;
+     
+     }
+    h2{
+      color: black;
+      font-size: 1.5rem;
+      margin-top: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1.6rem;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black;
+
+     }
+     h3{
+      color: rgb(71, 70, 70);
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 300;
+      line-height: 1.6rem;
+
+     }
+.title {
+      color: rgb(121, 119, 119);
+      font-size: 1rem;
+      text-align: right;
+      font-weight: 300;
+      line-height: 1.6rem;
+      margin: 30px;
+      margin-bottom: 80px;
+
+}
+a{
+      color: black;
+      font-size: 1rem;
+      text-align: right;
+      font-weight: 300;
+      line-height: 1.6rem;
+
+
+
+}
+    .image{
+   
+      border-radius: 50%;
+      width:200px;  
+      height: 200px;
+      align-items: center;
+      
+     }
+     p{
+      font-size: 1 rem;
+      font-family: sans-serif;
+      font-weight: 200;
+     
+      
+     }
+     .list{
+
+      font-size: 1 rem;
+      font-family: sans-serif;
+      font-weight: 200;
+     padding-bottom: 10px ;
+     padding-top: 10px;
+     margin-left: 20px;
+     }
+     h4{
+      color: rgb(0, 0, 0);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+
+
+     }
+     h5{
+      font-size: 1 rem;
+      font-family: sans-serif;
+      font-weight: 300;
+      color: rgb(59, 59, 59);
+      padding-bottom: 10px ;
+     padding-top: 10px;
+     }
