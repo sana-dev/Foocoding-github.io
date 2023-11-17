@@ -1,313 +1,131 @@
-/*Desktop*/
-
-@media(max-width:1440px) {
-header{
+body{
+      background-color: rgb(247, 239, 229);
+      margin: 12px;
       font-family: sans-serif;
-      font-weight: 300;
-      font-size: 20px;
-      text-align: center;
-      background-color: rgb(170, 218, 211);
-      padding: 5px;
-      margin: 10px;
 }
-h2{
-      font-family: sans-serif;
-      font-size: 20px;
-      padding: 10px;
-      margin: 20px;
+h1,h2{
+     background-color: rgb(221, 221, 221);
       text-align: center;
       
-}
-h3{
-      font-family: sans-serif;
-      font-size: 15px;
-      text-align: center;
-}
-p{
-      font-family: sans-serif;
-      font-size: 10px;
-      text-align: center;
-}
-
-img{
-      width: 100%;
-      height: auto;
-      display: grid;
-      border-radius: 3px;
-      
-}
-
-#grid-floats{
-     
-      margin: 20px;
-      padding: 10px;
-     display: grid;
-     height: 100vh;
-     grid-template-columns: repeat(4,1fr);
-     grid-template-rows: repeat(4,1fr);
-     row-gap: 12px;
-     column-gap:12px;
-     
 }
 .grid-item{
-      background-color: rgb(243, 243, 243);
-      border-radius: 5px;
-      padding: 4px;
-      margin: 4px;   
+      border: 2px solid grey;
+      margin: 6px;
+      border-radius: 6px;
 }
-.grid-item1{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 4px;
-    margin: 4px; 
-    border-radius: 15px;
-    width: 100%;
-    height: auto;
-    display: grid;
-    border-radius: 3px;
-    background-color:rgb(243, 243, 243) ;
-    border-radius: 5px;
+img{
+      width: 100%;
+}
+h3{
+     text-align: center ;
+     background-color: rgb(201, 201, 201);
+     padding: 16px;
+     margin: 0;
 
 }
+p{
+      margin: 26px;
 }
-/*tablet*/
-@media(min-width: 540px) and (max-width: 786px)  {
-      header{
-            font-family: sans-serif;
-            font-weight: 300;
-            font-size: 20px;
-            text-align: center;
-            background-color: rgb(170, 218, 211);
-            padding: 5px;
-            margin: 10px;
+
+  #grid-floats{
+     display: grid;
+     grid-template-columns: repeat(12,1fr);
+     grid-gap: 15px;
+     padding: 0;
+     margin-bottom: 64px;
+     list-style: none;
+     
+}
+/* not sure if it is really required 
+.grid-item{
+      grid-column: span 6;
+}
+.grid-item:first-child {
+    grid-column: span 12;
+
+}*/
+  @media (min-width: 500px) {
+     .grid-item {
+      grid-column: span 12;
+        background-color: rgb(177, 230, 230); 
+
       }
-      h2{
-            font-family: sans-serif;
-            font-size: 20px;
-            padding: 10px;
-            margin: 20px;
-            text-align: center;
-            
-      }
-      h3{
-            font-family: sans-serif;
-            font-size: 15px;
-            text-align: center;
-      }
-      p{
-            font-family: sans-serif;
-            font-size: 10px;
-            text-align: center;
+
+
       }
       
-      img{
-            width: 100%;
-            height: auto;
-            display: grid;
-            border-radius: 3px;
-            
-      }
-      
-      #grid-floats{
-           
-            margin: 20px;
-            padding: 10px;
-           display: grid;
-           height: 100vh;
-           /*grid-template-columns: repeat(3,1fr);
-           grid-template-rows: repeat(3,1fr);*/
-            grid-template-columns: repeat(4,1fr);
-           grid-template-rows: repeat(4,1fr);
-           row-gap: 12px;
-           column-gap:12px;
-           
-      }
+  @media (min-width:768px) {
       .grid-item{
-            background-color: rgb(243, 243, 243);
-            border-radius: 5px;
-            padding: 4px;
-            margin: 4px;   
+            grid-column: span 4;
       }
-      .grid-item1{
-         
-          padding: 4px;
-          margin: 4px; 
-          border-radius: 15px;
-          width: 100%;
-          height: auto;
-          
-          border-radius: 3px;
-          background-color:rgb(243, 243, 243) ;
-          border-radius: 5px;
+     
+      .grid-item:first-child{
+            grid-column: span 6; /* The first two items span 2 columns */
+      }
       
+      .grid-item:nth-child(2) {
+            grid-column: span 6;
       }
-      .grid-item2{
-            grid-column-start: 3;
-            grid-column-end: 5;
-            padding: 4px;
-            margin: 4px; 
-            border-radius: 15px;
-            width: 100%;
-            height: auto;
-            display: grid;
-            border-radius: 3px;
-            background-color:rgb(243, 243, 243) ;
-            border-radius: 5px;
-        
+ 
+   
+}
+@media  (min-width:1024px) {
+       .grid-item {
+          grid-column: span 3;
+      }
+  
+       .grid-item:first-child {
+          grid-column: span 6; /* Makes the first item span 6 columns */
+      }
+      .grid-item:nth-child(2) {
+            grid-column: span 3;
         }
-      }
-      /*mobile*/
-@media(min-width: 390px) and (max-width: 540px)  {
-      header{
-            font-family: sans-serif;
-            font-weight: 300;
-            font-size: 20px;
-            text-align: center;
-            background-color: rgb(170, 218, 211);
-            padding: 5px;
-            margin: 10px;
-      }
-      h2{
-            font-family: sans-serif;
-            font-size: 20px;
-            padding: 10px;
-            margin: 20px;
-            text-align: center;
-            
-      }
-      h3{
-            font-family: sans-serif;
-            font-size: 15px;
-            text-align: center;
-      }
-      p{
-            font-family: sans-serif;
-            font-size: 10px;
-            text-align: center;
-      }
-      
-      img{
-            width: 100%;
-            height: auto;
-            display: grid;
-            border-radius: 3px;
-            
-      }
-      
-      #grid-floats{
-           
-            margin: 20px;
-            padding: 10px;
-           display: grid;
-           height: 100vh;
-            grid-template-columns: repeat(4,1fr);
-           grid-template-rows: repeat(4,1fr);
-           row-gap: 12px;
-           column-gap:12px;
-           
-      }
-      .grid-item{
-            background-color: rgb(243, 243, 243);
-            border-radius: 5px;
-            padding: 4px;
-            margin: 4px;   
-      }
-      .grid-item1{
-          grid-column-start: 1;
-          grid-column-end: 5;
-          padding: 4px;
-          margin: 4px; 
-          border-radius: 15px;
-          display: grid;
-          border-radius: 3px;
-          background-color:rgb(243, 243, 243) ;
-          border-radius: 5px;
-      
-      }
-       
-      }
+  
+  }
+/* grid flex */
 
-/*Desktop*/
-
-@media(max-width:1440px){
-      header{
-            font-family: sans-serif;
-            font-weight: 300;
-            font-size: 20px;
-            text-align: center;
-            background-color: rgb(170, 218, 211);
-            padding: 5px;
-            margin: 10px;
-      }
-      h2{
-            font-family: sans-serif;
-            font-size: 20px;
-            padding: 10px;
-            margin: 20px;
-            text-align: center;
-            background-color: rgb(170, 218, 211);
-
-            
-            
-      }
-      h3{
-            font-family: sans-serif;
-            font-size: 15px;
-            text-align: center;
-      }
-      p{
-            font-family: sans-serif;
-            font-size: 10px;
-            text-align: center;
-      }
-      img{
-            width: 100%;
-            height: auto;
-            display: flex;
-            border-radius: 3px;
-            
-      }
 
       #grid-flex{
             display: flex;
-            flex-direction:row;
             flex-wrap: wrap;
-            object-fit: cover;
+            grid-gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
            
             
       }
-      .grid-item{
-            width: 300px;
-            padding: 10px;
+    #grid-flex .grid-item{
+       max-width: calc(50% - 8px);
+      }
         
-      }
       
-     
-     
-}
-/*tablet*/
-@media(min-width: 540px) and (max-width: 786px) {
-    
-      #grid-flex{
-            display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            object-fit: cover;
-           
-            
-      }
-     
-
-}
-/*mobile*/
-@media(min-width: 390px) and (max-width: 540px) {
-      #grid-flex{
-            display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            object-fit: cover;
-           
-            
-      }
-
-}
+      @media (min-width: 500px) {
+            #grid-flex .grid-item {
+                max-width: calc(100%);
+            }
+        
+            #grid-flex .grid-item:first-child,
+            #grid-flex .grid-item:nth-child(2) {
+                max-width: calc(100%);
+            }
+        }
+        
+              
+      @media (min-width: 768px) {
+            #grid-flex .grid-item {
+                max-width: calc(30% - 11px);
+            }
+        
+            #grid-flex .grid-item:first-child,
+            #grid-flex .grid-item:nth-child(2) {
+                max-width: calc(45% - 8px);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            #grid-flex .grid-item,
+            #grid-flex .grid-item:nth-child(2) {
+                max-width: calc(22.12% - 12px);
+            }
+        }
