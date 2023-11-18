@@ -1,4 +1,4 @@
-https://github.com/sana-dev/Foocoding-github.io.git/html-css/week02/Homework2/
+https://github.com/sana-dev/Foocoding-github.io.git/html-css/week02/homework2/
 
 
 
