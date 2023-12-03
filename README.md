@@ -8,4 +8,4 @@ Html/Css
 Javascript
 
 
-[Week03](https://htmlpreview.github.io/?https://github.com/sana-dev/Foocoding-github.io/blob/main/javascript%2002/index.html)
+[Week02](https://htmlpreview.github.io/?https://github.com/sana-dev/Foocoding-github.io/blob/main/javascript%2002/index.html)
