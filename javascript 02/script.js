@@ -7,7 +7,7 @@ console.log("Γειά σου Κόσμε");//Greek
 //2
 console.log("I'm awesome'");
 //3
-var x;
+const x;
 console.log ("the value of my variable x will be: undefined");
 console.log(x);
 x =21;
