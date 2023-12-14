@@ -1,0 +1,60 @@
+/* style.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+  background-color: rgb(249, 224, 216);
+}
+
+.library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: space-around;
+}
+
+
+.book {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+/* Move the card slightly on the Y-axis when hovered */
+.book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+h1{
+  color: #2d2c2c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.library-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
