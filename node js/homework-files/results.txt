@@ -1,0 +1,6 @@
+Total Salary: NaN
+Average Salary: NaN
+ has the Minimum Salary: Infinity
+ has the Maximum Salary: -Infinity
+Minimum age: Infinity
+Maximum age: -Infinity
