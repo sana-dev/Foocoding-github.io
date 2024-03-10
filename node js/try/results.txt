@@ -1,0 +1,29 @@
+{
+  "totalSalary": 698775337,
+  "averageSalary": 70004,
+  "peopleAmount": 9982,
+  "minAge": 20,
+  "maxAge": 70,
+  "professionData": {
+    "doctor": {
+      "minSalary": 40004,
+      "maxSalary": 99998
+    },
+    "developer": {
+      "minSalary": 40019,
+      "maxSalary": 99987
+    },
+    "police officer": {
+      "minSalary": 40049,
+      "maxSalary": 99984
+    },
+    "firefighter": {
+      "minSalary": 40001,
+      "maxSalary": 99987
+    },
+    "worker": {
+      "minSalary": 40015,
+      "maxSalary": 99983
+    }
+  }
+}
