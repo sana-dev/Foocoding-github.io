@@ -13,7 +13,6 @@ async function createConnection() {
 async function main() {
     const connection = await createConnection();
 
-    // Function to prepare, execute, and deallocate a prepared statement
     async function executePreparedStatement(query, params) {
         const prepareStmt = 'PREPARE stmt FROM ?';
         const executeStmt = 'EXECUTE stmt USING ' + params.map((_, i) => `@param${i}`).join(', ');
@@ -21,19 +20,15 @@ async function main() {
 
         await connection.query(prepareStmt, [query]);
 
-        // Set parameters
         for (let i = 0; i < params.length; i++) {
             await connection.query(`SET @param${i} = ?`, [params[i]]);
         }
-
-        // Execute statement
         const [rows] = await connection.query(executeStmt);
         await connection.query(deallocateStmt);
 
         return rows;
     }
 
-    // Get the capital of country X
     const country = prompt('Enter the name of the country: ');
     const capitalQuery = 'SELECT capital FROM country WHERE name = ?';
     const capitalRows = await executePreparedStatement(capitalQuery, [country]);
@@ -43,7 +38,6 @@ async function main() {
         console.log(`Country ${country} not found.`);
     }
 
-    // List all the languages spoken in the region Y
     const region = prompt('Enter the name of the region: ');
     const languagesQuery = 'SELECT DISTINCT language FROM country JOIN countrylanguage ON country.code = countrylanguage.countrycode WHERE region = ?';
     const languagesRows = await executePreparedStatement(languagesQuery, [region]);
@@ -54,7 +48,7 @@ async function main() {
         console.log(`Region ${region} not found or no languages found.`);
     }
 
-    // Find the number of cities in which language Z is spoken
+
     const language = prompt('Enter the name of the language: ');
     const citiesQuery = 'SELECT COUNT(DISTINCT city.name) AS cityCount FROM city JOIN countrylanguage ON city.countrycode = countrylanguage.countrycode WHERE language = ?';
     const citiesRows = await executePreparedStatement(citiesQuery, [language]);
@@ -64,7 +58,6 @@ async function main() {
         console.log(`Language ${language} not found or no cities found.`);
     }
 
-    // Check if there are countries with the same official language and continent as the given country
     const countryForComparison = prompt('Enter the name of the country for comparison: ');
     const comparisonQuery = `
         SELECT DISTINCT otherCountry.name 
