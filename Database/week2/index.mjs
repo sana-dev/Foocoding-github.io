@@ -1,7 +1,6 @@
 const mysql = require('mysql2/promise');
 const prompt = require('prompt-sync')();
 
-// Create a connection to the database
 async function createConnection() {
     return await mysql.createConnection({
         host: 'localhost',
@@ -94,4 +93,3 @@ async function main() {
 main().catch(err => {
     console.error(err);
 });
-
